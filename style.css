@@ -7,6 +7,9 @@
 
 .logo{
     font-size: 1.2rem;
+    position: relative;
+    left: -40;
+    top: 50;
 }
 nav{
     min-height: 7vh;
@@ -22,11 +25,11 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 85vh;
 }
 header .hero-section img{
     height: 100%;
-    width: 90%;
+    width: 85%;
     object-fit: cover;
     border-radius: 1rem;
     position: absolute;
@@ -34,17 +37,22 @@ header .hero-section img{
 }
 header span[class*="cta-"]{
     text-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+    position: relative;
 }
-.cta-text{
+.cta-text, .cta-text2{
+    color: #fff;
     display: flex;
     gap: 1rem;
-    color: #fff;;
+}
+.cta-text h2, .cta-text2 h2{
+    overflow: hidden;
 }
 .hero-content{
-    transform: translateY(-2rem);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    position: absolute;
+    transform: translateY(-2rem);
+    flex-direction: column;
 }
 button.explore{
     margin-top: 1rem;
